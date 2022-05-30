@@ -21,3 +21,29 @@ const counters = document.querySelectorAll('.skills__ratings-counter'),
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+
+$(document).ready(function(){
+    
+    // Smooth scroll and pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+});
