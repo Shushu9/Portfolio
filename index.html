@@ -79,7 +79,6 @@
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
                     <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
                     <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                    <!-- <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li> -->
                     <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
@@ -156,13 +155,15 @@
                         </div>
                         <div>
                             <div class="title title_fz14">Hard skills</div>
-                            <div class="about__skills-text">Sass/Scss; Создание адаптивной вёрстки; Работа с Bootstrap
-                                4, FlexBox и Grid Layout; Photoshop, Figma, Git, Псевдоклассы и
-                                псевдоэлементы
-                                Умение оптимизировать скорость работы сайтов и проводить валидацию верстки по стандартам
-                                w3c
-                                Использование методологии БЭМ
-                            </div>
+                            <ul class="about__skills-text">
+                                <li>Создание адаптивной вёрстки</li>
+                                <li>Работа c Sass/Scss</li>
+                                <li>Работа с Bootstrap, FlexBox и Grid Layout</li>
+                                <li>Работа с Git и GitHub</li>
+                                <li>Использование псевдоклассов и псевдоэлементов</li>
+                                <li>Работа с семантическими тегами</li>
+                                <li>Использование методологии БЭМ</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="about__skills-item">
@@ -171,13 +172,13 @@
                         </div>
                         <div>
                             <div class="title title_fz14">Soft skills</div>
-                            <div class="about__skills-text">
-                                Коммуникабельность;
-                                Критическое мышление; <br>
-                                Любовь к самообучению и обучению других;
-                                Умение принимать решения;
-                                Поиск максимально оптимального решения перед выполнением задачи.
-                            </div>
+                            <ul class="about__skills-text">
+                                <li>Коммуникабельность</li>
+                                <li>Критическое мышление</li>
+                                <li>Любовь к самообучению и обучению других</li>
+                                <li>Умение принимать решения</li>
+                                <li>Поиск максимально оптимального решения перед выполнением задачи</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="about__skills-item">
@@ -186,12 +187,12 @@
                         </div>
                         <div>
                             <div class="title title_fz14">Языки</div>
-                            <div class="about__skills-text">
-                                Русский — Родной <br>
-                                Английский — B2 (в соответствии с EF SET тестированием)<br>
-                                Белорусский — А2 <br>
-                                Польский — A1
-                            </div>
+                            <ul class="about__skills-text">
+                                <li>Русский — Родной</li>
+                                <li>Английский — B2 (в соответствии с EF SET тестированием)</li>
+                                <li>Белорусский — А2</li>
+                                <li>Польский — A1</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -374,21 +375,39 @@
             <div class="portfolio__wrapper">
                 <a href="https://Shushu9.github.io/uber/" class="portfolio__item">
                     <img src="img/works/uber.jpg" alt="uber">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">Первый учебный проект с использованием предпроцессора Saas и сетки bootstrap при адаптации </div>
+                    </div>
                 </a>
                 <a href="https://Shushu9.github.io/pulse/" class="portfolio__item">
                     <img src="img/works/pulse.jpg" alt="pulse">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">Учебный проект с использованием предпроцессора SCSS, реализованными модальными окнами, а так же слайдером, табами и валидатором на основе Jquerry</div>
+                    </div>
                 </a>
                 <a href="https://shushu9.github.io/prengi/" class="portfolio__item">
                     <img src="img/works/prengi.jpg" alt="prengi">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">Первый самостоятельный проект с использованием SCSS, табов и слайдера на основе Jquerry</div>
+                    </div>
                 </a>
                 <a href="https://shushu9.github.io/glopt/" class="portfolio__item vertical">
                     <img src="img/works/glopt.jpg" alt="glopt">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">Самостоятельный проект с использованием SCSS, слайдера и карт, анимированного гамбургера и модального окна</div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" alt="ipad">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">In Development</div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item horizontal">
                     <img src="img/works/mac.jpg" alt="mac">
+                    <div class="portfolio__overlay">
+                        <div class="portfolio__desc">Coming Soon!</div>
+                    </div>
                 </a>
             </div>
         </div>
