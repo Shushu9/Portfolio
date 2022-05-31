@@ -22,7 +22,7 @@
 
     &__item {
         transition: all 0.6s;
-        // position: relative;
+        position: relative;
 
         img {
             display: block;
@@ -35,11 +35,11 @@
             opacity: 1;
           }
 
-        &:hover {
-            transform: scale(1.05);
-            filter: drop-shadow(16px 16px 16px $main-color);
+        // &:hover {
+            // transform: scale(1.05);
+        //     filter: drop-shadow(16px 16px 16px $main-color);
 
-        }
+        // }
     }
 
     &__overlay {
@@ -52,7 +52,7 @@
             width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0,0,0,0.7);
     }
 
     &__desc {
