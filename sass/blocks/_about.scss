@@ -39,6 +39,11 @@
         margin-top: 20px;
         font-size: 14px;
         line-height: 21px;
+
+        a {
+            color: #000000;
+            font-style: italic;
+        }
     }
 
     &__skills {
@@ -69,6 +74,12 @@
             margin-top: 6px;
             font-size: 12px;
             line-height: 18px;
+
+            a {
+                color: #000000;
+                font-style: italic;
+                font-size: 11px;
+            }
         }
     }
 }
