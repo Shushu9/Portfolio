@@ -1,13 +1,15 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    // background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
 
     &__title {
+        position: relative;
         max-width: 530px;
         margin-top: 10px;
         color: #fff;
+        z-index: 2;
     }
 
     &__subtitle {
@@ -24,9 +26,11 @@
         align-items: center;
         justify-content: space-between;
         width: 250px;
+        z-index: 2;
     }
 
     &__link {
+        z-index: 2;
         font-weight: bold;
         color: #fff;
 
