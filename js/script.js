@@ -1,7 +1,10 @@
+///HAMBURGER
+
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
-closeLink = document.querySelector('.menu__list');
+    closeElem = document.querySelector('.menu__close'),
+    menuLink = document.querySelectorAll('.menu__link'),
+    overlay = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -11,16 +14,20 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-closeLink.addEventListener('click', () => {
-    menu.classList.remove('active');
+menuLink.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+})
+
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        menu.classList.remove('active');
+    }
 });
 
-const counters = document.querySelectorAll('.skills__ratings-counter'),
-    lines = document.querySelectorAll('.skills__ratings-line span');
 
-counters.forEach((item, i) => {
-    lines[i].style.width = item.innerHTML;
-});
+
 
 
 $(document).ready(function () {
