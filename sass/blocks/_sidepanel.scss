@@ -1,18 +1,20 @@
 .sidepanel {
     position: fixed;
-    top: 230px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 340px;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     border-radius: 5px;
 
     &__link {
+        margin: 2px;
+
         svg path {
             transition: all 600ms ease;
         }
@@ -24,22 +26,33 @@
         }
     }
 
-    &__divider {
-        width: 2px;
-        height: 70px;
-        background-color: #000000;
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
     }
 
-    &__text {
-        height: 150px;
-        width: 25px;
-        color: #000;
+    &__item {
+        list-style: none;
+        width: 100%;
 
-        span {
-            transform: rotate(-90deg) translate(-35%, -265%);
-            display: block;
-            width: 150px;
+
+        a {
+            border-radius: 5px;
+            padding: 5px 0;
+            width: 100%;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: #000;
             font-weight: bold;
+            white-space: nowrap;
+            transition: all 500ms ease;
+
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
         }
     }
 }
