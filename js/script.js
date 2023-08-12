@@ -31,36 +31,36 @@ overlay.addEventListener('click', (e) => {
 
 ///Modal in contacs section (appear after submitting message)
 
-const modalTrigger = document.querySelector('.contacts__btn'),
-    modal = document.querySelector('#modal'),
-    modalItem = document.querySelectorAll('.modal__link'),
-    modalCard = document.querySelector('.modal');
+// const modalTrigger = document.querySelector('.contacts__btn'),
+//     modal = document.querySelector('#modal'),
+//     modalItem = document.querySelectorAll('.modal__link'),
+//     modalCard = document.querySelector('.modal');
 
 
 
-modalTrigger.addEventListener('click', () => {
-    modal.classList.add('modal_active');
-});
+// modalTrigger.addEventListener('click', () => {
+//     modal.classList.add('modal_active');
+// });
 
-function modalClose() {
-    modal.classList.remove('modal_active');
-}
+// function modalClose() {
+//     modal.classList.remove('modal_active');
+// }
 
-modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modalClose();
-    }
-});
-
-
-modalItem.forEach(item => {
-    item.addEventListener('click', modalClose);
-});
+// modal.addEventListener('click', (e) => {
+//     if (e.target === modal) {
+//         modalClose();
+//     }
+// });
 
 
-document.querySelector('.contacts__form').addEventListener('submit', (event) => {
-    event.preventDefault();
-})
+// modalItem.forEach(item => {
+//     item.addEventListener('click', modalClose);
+// });
+
+
+// document.querySelector('.contacts__form').addEventListener('submit', (event) => {
+//     event.preventDefault();
+// })
 
 
 
@@ -88,28 +88,4 @@ $(document).ready(function () {
             });
         }
     });
-
-
-
-
-    //modal
-
-    // $('[data-modal=consultation]').on('click', function () {
-    //     $('.overlay, #consultation').fadeIn('slow');
-    // });
-
-    // $('.modal__close').on('click', function () {
-    //     $('.overlay, #consultation, #thanks').fadeOut('slow');
-    // });
-
-    // $('.button_submit').on('click', function () {
-    //     $('#consultation').fadeOut('slow');
-    //     $('#thanks').fadeIn('slow');
-    // });
-
-    // $('.overlay').on('click', function (e) {
-    //     if (e.target.id === 'overlay') {
-    //         $('.overlay, #consultation, #thanks').fadeOut('slow');
-    //     }
-    // });
 });
